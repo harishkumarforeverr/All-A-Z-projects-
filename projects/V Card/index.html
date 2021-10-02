@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../boostrap files/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../boostrap files/fontawesome-free-5.6.3-web/css/all.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container align-item-center text-center m-5 p-5">
+        <div class="row">
+            <div class="col-12"> 
+                 <h1 style="color:fuchsia">VCard Reader using html and javascript </h1>
+                 <h4 style="color:red" > please uploaded your Vcard from your file </h4>  
+                 <input   type="file" id="inputid" style="min-height: 65px;" class="form-control"  onchange="readFile(this)"> </input> 
+            </div>
+        </div>
+    </div>
+    <div class="container ">
+        <div class="row">
+            <div class="col-12">
+                 <input id="inputtag" type="text" class="form-control">
+            </div>
+        </div>
+    </div>
+    <div class="container   m-5 p-5">
+        <div class="row">
+            <div class="col-12" id="mypara">
+                
+            </div>
+        </div>
+    </div>
+    <script src="../boostrap files/bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="../boostrap files/bootstrap/js/popper.min.js"></script>
+    <script src="../boostrap files/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./jquery.js"></script>
+    <script src="./javascript.js"> </script>
+</body>
+
+</html>

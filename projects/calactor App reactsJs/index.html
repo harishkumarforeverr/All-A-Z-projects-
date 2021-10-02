@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./angular prefined files/angular.js"></script>
+    <script src="./index.js"></script>
+    <script src="../boostrap files/bootstrap/css/bootstrap.min.css"></script>
+    <script src="../boostrap files/fontawesome-free-5.6.3-web/css/all.css"></script>
+</head>
+
+<body ng-app="myapp"> 
+    <div ng-controller="myCtr1 as c1" class="container">
+        <div class="row">  
+            <h2>Calacator</h2>
+            <h3> exp1 : {{c1.exp1}} </h3> 
+            <h3>Operation :{{c1.operator}} </h3>
+            <h3> exp2 : {{c1.exp2}} </h3> 
+            <h3> total : {{c1.total}} </h3>  
+        </div> 
+        <div class="row" >   
+            <div class="col-4">
+                <button  ng-click="c1.buttonIsClicked('1')"   class="btn btn-primary "> <span style="font-weight: 600;font-size: 50px;padding: 40px; ">1</span>  </button>
+                <button ng-click="c1.buttonIsClicked('2')"   class="btn btn-primary "> <span style="font-weight: 600;font-size: 50px; padding: 40px;  ">2</span>  </button>
+                <button ng-click="c1.buttonIsClicked('3')"   class="btn btn-primary "> <span style="font-weight: 600;font-size: 50px; padding: 40px;  ">3</span>  </button>
+                <button ng-click="c1.OperatedbuttonIsClicked('+')"   class="btn btn-primary "> <span style="font-weight: 600;font-size: 50px; padding: 40px;  ">+</span>  </button>
+            </div>
+            <div class="col-4">
+                <button ng-click="c1.buttonIsClicked('4')"   class="btn btn-primary "> <span style="font-weight: 600;font-size: 50px; padding: 40px;  ">4</span>  </button>
+                <button ng-click="c1.buttonIsClicked('5')"   class="btn btn-primary "> <span style="font-weight: 600;font-size: 50px; padding: 40px;  ">5</span>  </button>
+                <button ng-click="c1.buttonIsClicked('6')"   class="btn btn-primary "> <span style="font-weight: 600;font-size: 50px; padding: 40px;  ">6</span>  </button>
+                <button ng-click="c1.OperatedbuttonIsClicked('-')"   class="btn btn-primary "> <span style="font-weight: 600;font-size: 50px; padding: 40px;  ">-</span>  </button>
+            </div>
+            <div class="col-4">
+                <button ng-click="c1.buttonIsClicked('7')"   class="btn btn-primary "> <span style="font-weight: 600;font-size: 50px; padding: 40px;  ">7</span>  </button>
+                <button ng-click="c1.buttonIsClicked('8')"   class="btn btn-primary "> <span style="font-weight: 600;font-size: 50px; padding: 40px;  ">8</span>  </button>
+                <button ng-click="c1.buttonIsClicked('9')"   class="btn btn-primary "> <span style="font-weight: 600;font-size: 50px; padding: 40px;  ">9</span>  </button>
+                <button ng-click="c1.OperatedbuttonIsClicked('*')"   class="btn btn-primary "> <span style="font-weight: 600;font-size: 50px; padding: 40px;  ">*</span>  </button>
+            </div>    
+             <div class="col-4">
+                <button ng-click="c1.OperatedbuttonIsClicked('/')"   class="btn btn-primary "> <span style="font-weight: 600;font-size: 50px; padding: 40px;  ">/</span>  </button>
+                <button ng-click="c1.OperatedbuttonIsClicked('%')"   class="btn btn-primary "> <span style="font-weight: 600;font-size: 50px; padding: 40px;  ">%</span>  </button>
+                <button   ng-click="c1.refreshButtonClicked()" class="btn btn-primary "> <span style="font-weight: 600;font-size: 50px; padding: 40px;  ">R</span>  </button>
+                <button ng-click="c1.finalButtonClciked('=')"   class="btn btn-primary "> <span style="font-weight: 600;font-size: 50px; padding: 40px;  ">=</span>  </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./angular prefined files/angular.js"></script>
+    <script src="./index.js"></script>
+    <script src="./myModule.js"></script>
+    <link rel="stylesheet" href="./angular prefined files/ng-tags-input.min.css" />
+    <script src="./angular prefined files/ng-tags-input.min.js"></script>
+    <link rel="stylesheet" href="../boostrap files/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../boostrap files/fontawesome-free-5.6.3-web/css/all.css" />
+    <script src="./ControllerApp.js"></script>
+    <script src="./ContactsSVC.js"></script>
+</head>
+
+<body ng-app="myapp">
+    <div ng-controller="header as head">
+
+    </div>
+    <div style="text-align: center; font-weight: 800; color:black;"> 
+        <p>
+            sorry for incovience, delete and add new user and edit button are under Observation
+            <br>
+            (i.e i know only how to handle json file by localhost , not on internet/google)
+            <br>
+            whem i know i update these page  :)
+        </p>
+    </div>
+    <div ng-controller="myCtr as c1">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <!-- media boostrap -->
+                    <h2>All Users profiles </h2>
+                    <ul class="list-group">
+                        <li class="list-group-item" ng-repeat="user in c1.users" ng-click="c1.userIsCliked($index)">
+                            {{user.name.first}} {{user.name.last}}
+                            <button style="font-size: xx-small;" ng-hide="c1.toogle_sh"
+                                ng-click="c1.deleteUserData(user.id)">
+                                Remove
+                            </button>
+
+                        </li>
+                        <button class="btn btn-primary" ng-hide="c1.toogle_sh" ng-click="c1.AddNewUserData()">
+                            Add New user
+                        </button>
+                    </ul>
+                </div>
+
+                <div class="col-6">
+                    <!-- card boostrap -->
+                    <div>
+                        <button class="btn btn-primary" ng-hide="c1.toogle_sh" ng-click="c1.editUserData()">
+                            Edit
+                        </button>
+                        <button class="btn btn-primary" ng-show="c1.toogle_sh" ng-click="c1.saveUserData()">
+                            Save
+                        </button>
+                        <h4 class="text text-success" ng-bind="c1.s_message"></h4>
+                        <h4 class="text text-danger" ng-bind="c1.e_message"></h4>
+                        <h4 class="text text-danger" ng-bind="c1.w_message"></h4>
+                    </div>
+                    <div class="card" style="width: 18rem">
+                        <img src="..." class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <span ng-hide="c1.toogle_sh">{{c1.selectedUser.name.first}}
+                                    {{c1.selectedUser.name.last}}
+                                </span>
+
+                                <span ng-show="c1.toogle_sh">
+                                    <input type="text" ng-model="c1.selectedUser.name.first" />
+                                    <input type="text" ng-model="c1.selectedUser.name.last" />
+                                </span>
+                            </h5>
+                            <p class="card-text">
+                                ID :
+
+                                <span ng-hide="c1.toogle_sh">{{c1.selectedUser.id}} </span>
+
+                                <span ng-show="c1.toogle_sh">
+                                    <input type="text" ng-model="c1.selectedUser.id" />
+                                </span>
+                            </p>
+                            <p class="card-text">
+                                City :
+
+                                <span ng-hide="c1.toogle_sh">{{c1.selectedUser.location.city}}
+                                </span>
+
+                                <span ng-show="c1.toogle_sh">
+                                    <input type="text" ng-model="c1.selectedUser.location.city" />
+                                </span>
+                            </p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                State :
+
+                                <span ng-hide="c1.toogle_sh">{{c1.selectedUser.location.state}}
+                                </span>
+
+                                <span ng-show="c1.toogle_sh">
+                                    <input type="text" ng-model="c1.selectedUser.location.state" />
+                                </span>
+                            </li>
+                            <li class="list-group-item">
+                                Country :
+
+                                <span ng-hide="c1.toogle_sh">{{c1.selectedUser.location.country}}
+                                </span>
+
+                                <span ng-show="c1.toogle_sh">
+                                    <input type="text" ng-model="c1.selectedUser.location.country" />
+                                </span>
+                            </li>
+                            <li class="list-group-item">
+                                postCode :
+
+                                <span ng-hide="c1.toogle_sh">{{c1.selectedUser.location.postcode}}
+                                </span>
+
+                                <span ng-show="c1.toogle_sh">
+                                    <input type="text" ng-model="c1.selectedUser.location.postcode" />
+                                </span>
+                            </li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">
+                                email :
+
+                                <span ng-hide="c1.toogle_sh">{{c1.selectedUser.email}} </span>
+
+                                <span ng-show="c1.toogle_sh">
+                                    <input type="text" ng-model="c1.selectedUser.email" />
+                                </span>
+                            </a>
+                            <br />
+                            <a href="#" class="card-link">
+                                phone
+
+                                <span ng-hide="c1.toogle_sh">{{c1.selectedUser.phone}} </span>
+
+                                <span ng-show="c1.toogle_sh">
+                                    <input type="text" ng-model="c1.selectedUser.phone" />
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

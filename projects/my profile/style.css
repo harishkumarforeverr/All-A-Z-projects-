@@ -1,0 +1,74 @@
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0 ;
+}
+#header1 a{
+ color:black;
+ font-weight: 600;
+}
+nav ul li a{
+    font-weight: 1.1rem;
+    font-weight: 600;
+}
+.qualities-img {
+    width: 200px;
+}
+/* 3rd section starts  */
+.requirements-section {
+    background-color: #004d80;
+    color: white;
+}
+/* 3rd section ends */
+/* 5th section  */
+.home-newsletter{
+    background-color: #004d80;
+    color: white;
+}
+  .home-newsletter .form-control {
+      height: 50px;
+      border-color: transparent;
+      border-radius: 20px 0 0 20px;
+  }
+  .home-newsletter .btn {
+      min-height: 50px;
+      border-radius: 0 20px 20px 0; 
+      color: #fff;
+  }
+/* 5th section end */
+/* 7th section  */
+.clients-section {
+    background-color: #f0f0f0;
+}
+/* 7th section ends */
+/* footer section starts  */
+.bottom-footer{ 
+    background-color: #031b2e;
+    color:white;
+}
+.full-footer {
+    background-color: #243c4f;
+    color: white; 
+    font-weight: 600;
+}
+.full-footer a { 
+    color: white;
+    font-weight: 600;
+} 
+.bottomHeader  {
+    font-weight: 600;
+}
+.bottomHeader  {
+    font-size: 1.09rem;
+}
+/* portfolio section  */
+.breadcrumbs-section {
+    background-color: #e9ecef;
+}
+/* portfoli section ends  */
+.bar {
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-radius: 17px;
+    border: 1px solid rgb(63, 71, 80);
+}

@@ -1,0 +1,21 @@
+.inputtag{
+    font-weight: 600;
+}
+#btn1{
+    display:none;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+#errormsg{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+body{
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+#myhelpingbutton{
+    display:none;
+    font-weight: 600;
+    font-size: 1.1rem;
+}

@@ -1,0 +1,86 @@
+{
+  "contacts": [
+    {
+      "gender": "male",
+      "name": {
+        "title": "Mr",
+        "first": "chintu",
+        "last": "naveen"
+      },
+      "location": {
+        "street": {
+          "number": 4742,
+          "name": "Lone Wolf Trail"
+        },
+        "city": "Wichita",
+        "state": "New Mexico",
+        "country": "umri ssss",
+        "postcode": 61212,
+        "coordinates": {
+          "latitude": "86.2723",
+          "longitude": "-4.1094"
+        },
+        "timezone": {
+          "offset": "+5:30",
+          "description": "Bombay, Calcutta, Madras, New Delhi"
+        }
+      },
+      "email": "perry.jackson@example.com",
+      "login": {
+        "uuid": "c7b77f99-6bf0-4b8f-a649-f16499408661",
+        "username": "crazymeercat979",
+        "password": "haha",
+        "salt": "BU0dSI94",
+        "md5": "e55857d85c1ada68c0ad63ad2026335e",
+        "sha1": "789a0d50e7595d7cb42368493ce355e48b9e7b8c",
+        "sha256": "eea3f4ac591da50900c069e63565bc6052c1adbb5da8316059cad38dff8d2de2"
+      },
+      "dob": {
+        "date": "1949-08-20T19:58:02.384Z",
+        "age": 72
+      },
+      "registered": {
+        "date": "2009-06-07T11:51:32.118Z",
+        "age": 12
+      },
+      "phone": "(553)-054-3034",
+      "cell": "(242)-782-8491",
+      "id": 5,
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/29.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/29.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/29.jpg"
+      }
+    },
+    {
+      "id": "0",
+      "name": {
+        "first": "Govind",
+        "last": "Nayak"
+      },
+      "location": {
+        "city": "Nizamabad",
+        "state": "Telangana",
+        "country": "India",
+        "postcode": "503246"
+      },
+      "email": "harishking809@gmail.com",
+      "phone": "harishking809@gmail.com"
+    },
+    {
+      "id": "11",
+      "name": {
+        "first": "harish",
+        "last": "kumar"
+      },
+      "location": {
+        "city": "Nizamabad",
+        "state": "Telangana",
+        "country": "India",
+        "postcode": "503246"
+      },
+      "email": "harishking809@gmail.com",
+      "phone": "harishking809@gmail.com"
+    }
+  ]
+}

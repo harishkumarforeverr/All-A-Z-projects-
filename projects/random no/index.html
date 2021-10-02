@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my Game</title>
+    <link rel="stylesheet" href="../boostrap files/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../boostrap files/fontawesome-free-5.6.3-web/css/all.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <input type="hidden" id="randomValue">
+    <input type="hidden" id="attempts">
+     <div  class="container mt-4">
+         <div class="row" id="top">
+             <div class="col-12">
+                <button onclick="displayTheText()"  id="myhelpingbutton" class="btn btn-primary m-3" style="width:150px;">see no( help )</button>
+                <div id="helpme">
+
+                </div>
+             </div>
+         </div>
+        <div class="row text-center">
+            <div class="col-12">  
+                <h3>Guess the 4-digit no :) </h3>
+               <input id="inputvalue" type="number" class="form-control"> 
+            </div>
+        </div> 
+
+        <div class="row text-center inputtag">
+            <div class="col-12">  
+                <button onclick="window.location.reload()"  id="btn1" class="btn btn-primary m-3" style="width:150px;">replay</button>
+
+                <button id="btn2" onclick="getinputvalue()" class="btn btn-primary m-3" style="width:150px;">submit</button>
+
+                <button onclick="window.location.reload()" id="btn3" class="btn btn-primary m-3"  style="width:150px;">cancel</button>
+                <div id="toperrormsgid" class="col-12">
+                   
+                </div>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div id="errormsg" class="col-12">   
+            </div>
+        </div>
+         
+     </div> 
+         
+ 
+
+
+
+
+
+    <script src="../boostrap files/bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="../boostrap files/bootstrap/js/popper.min.js"></script>
+    <script src="../boostrap files/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./javascript.js"></script>
+</body>
+</html>
